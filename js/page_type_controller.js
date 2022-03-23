@@ -1,7 +1,7 @@
 $(window).on("load", function () {
     console.log(isMobileDevice())
     if (isMobileDevice()){
-        window.location.href = "/index_mobile"
+        window.location.href = "/index_mobile.html"
     }
 })
 function isMobileDevice() {

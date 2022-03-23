@@ -39,17 +39,13 @@ header .header-nav .header-nav-item {
 
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 600;
     font-size: 15px;
-    line-height: 19px;
 
     color: #000000;
 }
 
 header .header-nav .active {
     border-bottom: 3px solid #2CD6D6;
-
-    font-weight: 1000;
 }
 
 header .header-nav p {
@@ -62,11 +58,11 @@ header .header-nav p {
 }
 
 .content .text-header {
-    font-family: Roboto;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 50px;
+    line-height: 52px;
 
 }
 
@@ -97,7 +93,7 @@ header .header-nav p {
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
 
     color: #000000;
