@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>GoodNews</title>
     <link rel="stylesheet" href="css/style_mobile.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script src="js/switch_categories_mobile.js"></script>
 </head>
 <body>
     <header class="">
@@ -18,11 +23,11 @@
             </div>
         </div>
         <div class="header-nav">
-            <div class="header-nav-item active">
+            <div class="header-nav-item active" id="new">
                 <img src="img/lightning2.svg" style="width: 47px">
                 <p>Новое</p>
             </div>
-            <div class="header-nav-item">
+            <div class="header-nav-item" id="popular">
                 <img src="img/star2.svg" style="width: 55px">
                 <p>Популярное</p>
             </div>
