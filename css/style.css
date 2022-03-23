@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+.pulse-mini {
+    height: 156px;
+    width: 156px;
+    opacity: 0;
+    border: 1px solid #99F2F2;
+    border-radius: 150px;
+    -webkit-animation: pulsate-mini 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.pulse-big {
+    height: 156px;
+    width: 156px;
+    opacity: 0;
+    border: 1px solid #99F2F2;
+    border-radius: 150px;
+    -webkit-animation: pulsate-big 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate-mini {
+    0% {-webkit-transform: scale(1, 1); opacity: 0.1;}
+    50% {opacity: 100;}
+    100% {-webkit-transform: scale(1.22, 1.22); opacity: 0.1;}
+}
+
+@keyframes pulsate-big {
+    0% {transform: scale(1, 1); opacity: 0.1;}
+    50% {opacity: 1.0;}
+    100% {transform: scale(1.6, 1.6); opacity: 0.0;}
+}
+
 .hover :hover {
     cursor: pointer;
 }
@@ -35,7 +67,7 @@ header .nav-items .swipe p {
 }
 
 header .nav-items .swipe .swipe-item {
-    width: 45%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +82,6 @@ header .nav-items .swipe .swipe-item {
 }
 
 header .nav-items .swipe .active {
-    width: 55%;
     background: #1BC6C6;
     border-radius: 20px;
 
@@ -105,37 +136,6 @@ header .contacts {
     align-items: center;
 }
 
-.pulse-mini {
-    height: 156px;
-    width: 156px;
-    opacity: 0;
-    border: 1px solid #99F2F2;
-    border-radius: 150px;
-    -webkit-animation: pulsate-mini 2s ease-out;
-    -webkit-animation-iteration-count: infinite;
-}
-
-.pulse-big {
-    height: 156px;
-    width: 156px;
-    opacity: 0;
-    border: 1px solid #99F2F2;
-    border-radius: 150px;
-    -webkit-animation: pulsate-big 2s ease-out;
-    -webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes pulsate-mini {
-    0% {-webkit-transform: scale(1, 1); opacity: 0.1;}
-    50% {opacity: 100;}
-    100% {-webkit-transform: scale(1.22, 1.22); opacity: 0.1;}
-}
-
-@keyframes pulsate-big {
-    0% {transform: scale(1, 1); opacity: 0.1;}
-    50% {opacity: 1.0;}
-    100% {transform: scale(1.6, 1.6); opacity: 0.0;}
-}
 .content {
     display: flex;
     width: 100%;
