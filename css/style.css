@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+header {
+
+}
+
+header .nav-items {
+    display: flex;
+    margin-right: 226px;
+    margin-left: 426px;
+    align-items: center;
+}
+
+header .nav-items .swipe {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 57px;
+    width: 196px;
+    height: 25px;
+
+
+    background: #F7F7F8;
+    border: 1px solid #16E1E1;
+    border-radius: 20px;
+}
+
+header .nav-items .swipe p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+header .nav-items .swipe .swipe-item {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav-items .swipe .swipe-item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+header .nav-items .swipe .active {
+    width: 60%;
+    background: #1BC6C6;
+    border-radius: 20px;
+}
+
+header .nav-items .swipe .active p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+header .nav-items .categories {
+    display: flex;
+    flex-direction: column;
+}
+
+header .nav-items .categories p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+header .nav-items .categories .new {
+    display: flex;
+    padding-bottom: 12px;
+}
+
+header .nav-items .categories .new p {
+    margin-left: 10px;
+    margin-right: 8px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+header .nav-items .categories .popular {
+    display: flex;
+}
+
+header .nav-items .categories .popular p {
+    margin-left: 8px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+header .contacts {
+    display: flex;
+    align-items: center;
+}
+
+.pulse-mini {
+    height: 156px;
+    width: 156px;
+    opacity: 0;
+    border: 1px solid #99F2F2;
+    border-radius: 150px;
+    -webkit-animation: pulsate-mini 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.pulse-big {
+    height: 156px;
+    width: 156px;
+    opacity: 0;
+    border: 1px solid #99F2F2;
+    border-radius: 150px;
+    -webkit-animation: pulsate-big 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate-mini {
+    0% {-webkit-transform: scale(1, 1); opacity: 0.1;}
+    50% {opacity: 100;}
+    100% {-webkit-transform: scale(1.22, 1.22); opacity: 0.1;}
+}
+
+@keyframes pulsate-big {
+    0% {transform: scale(1, 1); opacity: 0.1;}
+    50% {opacity: 1.0;}
+    100% {transform: scale(1.6, 1.6); opacity: 0.0;}
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.main-content .main-content-posts-row {
+    display: flex;
+    margin-bottom: 42px;
+}
+
+.main-content .main-content-posts-row .post {
+    width: 411px;
+    height: 594px;
+    padding: 16px 16px 23px;
+    margin-right: 44px;
+
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+}
+
+
+.main-content .main-content-posts-row .post .text-main {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.main-content .main-content-posts-row .post .text-time {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #9B9B9B;
+}
+
+.main-content .main-content-posts-row .post .post-action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .main-content-posts-row .post .post-action p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #1BC6C6;
+}
+
+.main-content .main-content-posts-row .post .post-action .post-action-share {
+    display: flex;
+}
+
+.main-content .main-content-posts-row .post .post-action .post-action-share p {
+    margin-right: 9px;
+}
